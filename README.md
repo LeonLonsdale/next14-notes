@@ -256,7 +256,7 @@ const nextConfig = {
 
 ## The Link component
 
-- The link component creates anchor elements.
+- The link component creates `anchor` elements.
 - Import it from `next/link`
 - Accepts `href prop`
 - Makes use of `children prop`.
@@ -271,7 +271,7 @@ import Link from "next/link";
 
 ## The Image Component
 
-- The Image component creats img elements.
+- The Image component creates `img` elements.
 - Import it from `next/image`
 - Accepts `src`, `alt`, `width`, `height` props.
 - Width and height props are only required for images that are sourced from a different domain.
