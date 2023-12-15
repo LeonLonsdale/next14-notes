@@ -1,5 +1,7 @@
 # NextJS 14 Notes
 
+Course notes based on learning through `Professional React and Next.JS` - a course produced by [ByteGrad.com](https://bytegrad.com).
+
 # Contents
 
 - [Installation and Setup](#installation-and-setup)
