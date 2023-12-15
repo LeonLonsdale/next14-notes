@@ -1,15 +1,15 @@
 # NextJS 14 Notes
 
-## Contents
+# Contents
 
 - [Installation and Setup](#installation-and-setup)
   - [Installation](#installation)
   - [Add Prettier for Tailwind and ESLint](#add-prettier-and-prettier-for-tailwind-and-eslint)
   - [Set project word wrapping and formatter](#enable-wordwrapping-and-set-default-formatter-in-vs-code)
 
-## Installation and Setup
+# Installation and Setup
 
-### Instllation
+## Instllation
 
 ```bash
 npx create-next-app@latest
@@ -22,7 +22,7 @@ Would you like to use App Router? 'Yes'
 Would you like to customise the default import alias (@/*)? 'No'
 ```
 
-### Add Prettier and Prettier for Tailwind and ESLint
+## Add Prettier and Prettier for Tailwind and ESLint
 
 ```bash
 npm i -D prettier prettier-plugin-tailwindcss
@@ -50,7 +50,7 @@ Let ESLint know about Prettier in `.eslintrc.json`
 }
 ```
 
-### Enable WordWrapping and set default formatter in VS Code
+## Enable WordWrapping and set default formatter in VS Code
 
 1. Install the Prettier extension
 2. Create a new folder in root `.vscode`
