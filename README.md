@@ -53,10 +53,55 @@ Create Prettier config
 touch .prettierrc
 ```
 
+Add your prettier settings. These are my preferred settings below:
+
+```json
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "tabWidth": 4,
+        "semi": false,
+        "trailingComma": "none"
+      }
+    }
+  ]
+}
+```
+
 Add tailwind css plugin to config
 
 ```json
 {
+  "printWidth": 80,
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "tabWidth": 4,
+        "semi": false,
+        "trailingComma": "none"
+      }
+    }
+  ],
   "plugins": ["prettier-plugin-tailwindcss"]
 }
 ```
