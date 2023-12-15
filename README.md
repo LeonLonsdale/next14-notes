@@ -17,6 +17,9 @@ Course notes based on learning through `Professional React and Next.JS` - a cour
   - [Get the current path](#get-the-current-pathname)
   - [Access the route](#access-the-route)
   - [Access the params](#access-the-params)
+- [Security](#security)
+  - [Cross-origin Sites](#cross-origin-sites)
+    - [Images](#for-images)
 - [Built-in NextJS Components](#built-in-nextjs-components)
   - [The Link component](#the-link-component)
   - [The Image Component](#the-image-component)
@@ -222,6 +225,30 @@ export default Component({ params }: PageProps) { };
 - In this example, `id` is the param name.
 - This should match the dynamic route directory name.
 - If the directory is `[city]` then replace `id` above with `city`.
+
+[Back to contents](#contents)
+
+# Security
+
+## Cross-origin sites
+
+- By default, NextJS blocks resources taht are not locally accessible.
+- To allow access to the resources we need, we have to edit the `next.config.js`.
+
+### For Images
+
+- Create an `image` property in the config file. This should be an object.
+- Add an object property `remotePatterns` which should be an array.
+- Add an object to the array with the properties `protocol` and `hostname`.
+- Set the protocol value to `https` and the hostname value to the domain the image is sourced from.
+
+```js
+const nextConfig = {
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "bytegrad.com" }],
+  },
+};
+```
 
 [Back to contents](#contents)
 
