@@ -15,6 +15,9 @@ Course notes based on learning through `Professional React and Next.JS` - a cour
   - [Get the current path](#get-the-current-pathname)
   - [Access the route](#access-the-route)
   - [Access the params](#access-the-params)
+- [Built-in NextJS Components](#built-in-nextjs-components)
+  - [The Link component](#the-link-component)
+  - [The Image Component](#the-image-component)
 
 # Installation and Setup
 
@@ -191,3 +194,33 @@ export default Component({ params }: PageProps) { };
 - In this example, `id` is the param name.
 - This should match the dynamic route directory name.
 - If the directory is `[city]` then replace `id` above with `city`.
+
+# Built-in NextJS Components
+
+## The Link component
+
+- The link component creates anchor elements.
+- Import it from `next/link`
+- Accepts `href prop`
+- Makes use of `children prop`.
+
+```ts
+import Link from "next/link";
+
+<Link href="/">Home</Link>;
+```
+
+## The Image Component
+
+- The Image component creats img elements.
+- Import it from `next/image`
+- Accepts `src`, `alt`, `width`, `height` props.
+- Width and height props are only required for images that are sourced from a different domain.
+- This is to reserve space for the image to avoid moving the UI around as things load.
+- Locally sourced image dimensions are derrived automatically.
+
+```ts
+import Image from "next/image";
+
+<Image src="" alt="" width={} height={} />;
+```
