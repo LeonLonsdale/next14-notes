@@ -136,7 +136,7 @@ export const metadata: Metadata = {
 
 ## Custom 404 Not Found Response
 
-- Handled by default but can be customised by creation of a specical component.
+- Handled by default but can be customised by creation of a special component.
 - Create a file named `not-found.tsx` in the `app` dir
 - Create a component in this file. It's used automatically.
 
