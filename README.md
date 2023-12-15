@@ -34,6 +34,8 @@ Would you like to use App Router? 'Yes'
 Would you like to customise the default import alias (@/*)? 'No'
 ```
 
+[Back to contents](#contents)
+
 ## Add Prettier and Prettier for Tailwind and ESLint
 
 ```bash
@@ -62,6 +64,8 @@ Let ESLint know about Prettier in `.eslintrc.json`
 }
 ```
 
+[Back to contents](#contents)
+
 ## Enable WordWrapping and set default formatter in VS Code
 
 1. Install the Prettier extension
@@ -84,6 +88,8 @@ In the settings json, add
 }
 ```
 
+[Back to contents](#contents)
+
 # Set page title and description
 
 - Access `./src/layout.tsx`
@@ -98,6 +104,8 @@ export const metadata: Metadata = {
 ```
 
 - Different pages can have their own metadata constant export if required.
+
+[Back to contents](#contents)
 
 # Route Management
 
@@ -119,6 +127,8 @@ export const metadata: Metadata = {
             page.tsx
 ```
 
+[Back to contents](#contents)
+
 ## Create a Dynamic Route
 
 - A dynamic route is when the text in part of the path may vary
@@ -137,6 +147,8 @@ export const metadata: Metadata = {
                 page.tsx
 ```
 
+[Back to contents](#contents)
+
 ## Custom 404 Not Found Response
 
 - Handled by default but can be customised by creation of a special component.
@@ -149,6 +161,8 @@ export default function NotFound() {
 }
 ```
 
+[Back to contents](#contents)
+
 ## Get the current Pathname
 
 - The pathname is the full path including the route, dynamic routes, queries etc.
@@ -159,6 +173,8 @@ import { usePathname } from "next/navigation";
 
 const activePathname = usePathname();
 ```
+
+[Back to contents](#contents)
 
 ## Access the Route
 
@@ -174,6 +190,8 @@ const router = useRouter();
 
 router.push("route"); // go to pushed route.
 ```
+
+[Back to contents](#contents)
 
 ## Access the Params
 
@@ -195,6 +213,8 @@ export default Component({ params }: PageProps) { };
 - This should match the dynamic route directory name.
 - If the directory is `[city]` then replace `id` above with `city`.
 
+[Back to contents](#contents)
+
 # Built-in NextJS Components
 
 ## The Link component
@@ -210,6 +230,8 @@ import Link from "next/link";
 <Link href="/">Home</Link>;
 ```
 
+[Back to contents](#contents)
+
 ## The Image Component
 
 - The Image component creats img elements.
@@ -224,3 +246,5 @@ import Image from "next/image";
 
 <Image src="" alt="" width={} height={} />;
 ```
+
+[Back to contents](#contents)
