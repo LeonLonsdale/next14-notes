@@ -8,7 +8,9 @@ Course notes based on learning through `Professional React and Next.JS` - a cour
   - [Installation](#installation)
   - [Add Prettier for Tailwind and ESLint](#add-prettier-and-prettier-for-tailwind-and-eslint)
   - [Set project word wrapping and formatter](#enable-wordwrapping-and-set-default-formatter-in-vs-code)
-- [Set page title and description](#set-page-title-and-description)
+- [Page Setup Basics](#page-setup-basics)
+  - [Set page title and description](#set-page-title-and-description)
+  - [Favicon](#favicon)
 - [Route Management](#route-management)
   - [Create a Route](#create-a-route)
   - [Create a Dynamic Route](#create-a-dynamic-route)
@@ -90,7 +92,9 @@ In the settings json, add
 
 [Back to contents](#contents)
 
-# Set page title and description
+# Page Setup Basics
+
+## Set page title and description
 
 - Access `./src/layout.tsx`
 - Look for the `metadata` constant
@@ -104,6 +108,12 @@ export const metadata: Metadata = {
 ```
 
 - Different pages can have their own metadata constant export if required.
+
+[Back to contents](#contents)
+
+## Favicon
+
+To set your favicon, just put it in the `./src/app/` directory.
 
 [Back to contents](#contents)
 
