@@ -101,9 +101,9 @@ export const metadata: Metadata = {
 ## Create a Route
 
 - Routes in NextJS work based on the folder structure
-- The root path is `./src/app` directory.
+- The root path is `./src/app/`.
 - The application homepage is `page.tsx` found in this directory.
-- To create a new route, add a new directory to the root path.
+- To create a new route, add a new directory in `.src/app/`.
 - Each route must have its own `page.tsx`
 
 ```
