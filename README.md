@@ -232,7 +232,7 @@ export default Component({ params }: PageProps) { };
 
 ## Cross-origin sites
 
-- By default, NextJS blocks resources taht are not locally accessible.
+- By default, NextJS blocks resources that are not locally accessible.
 - To allow access to the resources we need, we have to edit the `next.config.js`.
 
 ### For Images
