@@ -6,10 +6,11 @@
   - [Installation](#installation)
   - [Add Prettier for Tailwind and ESLint](#add-prettier-and-prettier-for-tailwind-and-eslint)
   - [Set project word wrapping and formatter](#enable-wordwrapping-and-set-default-formatter-in-vs-code)
+- [Set page title and description](#set-page-title-and-description)
 
 # Installation and Setup
 
-## Instllation
+## Installation
 
 ```bash
 npx create-next-app@latest
@@ -71,3 +72,18 @@ In the settings json, add
   "editor.wordWrapColumn": 80
 }
 ```
+
+# Set page title and description
+
+- Access `./src/layout.tsx`
+- Look for the `metadata` constant
+- Edit object values as required
+
+```ts
+export const metadata: Metadata = {
+  title: "Page title",
+  description: "Page description",
+};
+```
+
+- Different pages can have their own metadata constant export if required.
